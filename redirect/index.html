@@ -7,6 +7,19 @@
   <meta http-equiv="refresh" content="5;url=/simple-task-app/" />
 </head>
 <body>
-  test page
+  redirect page <span></span>
+
+  <script>
+
+    const element = document.querySelector("span")
+    let n = 5
+    element.textContent = n
+
+    setInterval(() => {
+      if (n > 0) n--
+      element.textContent = n
+    }, 1000)
+
+  </script>
 </body>
 </html>
